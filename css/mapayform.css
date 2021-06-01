@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+
+
+
+
+.dos-columnas{
+	margin-top: 50px;
+}
+
+.datos{
+	float: left;
+	width: 25%;
+	margin: auto;
+	color:#999;
+}
+.formulario{
+	display: grid;
+	float: left;
+	width: 100%;
+	margin: auto;
+	color:#999;
+	align-content: flex-start;
+}
+.caja-1{
+	width: 90%;
+	height: 40px;
+	margin: 20px 20px;
+	padding: 10px;
+	font-size: 1rem;
+}
+.caja-2{
+	width: 90%;
+	height: 100px;
+	margin: 20px 20px;
+	padding: 10px;
+	font-size: 1rem;
+}
+.correr{
+	align-content: center;
+	margin: 20px 20px;
+	padding: 10px;
+	left: auto;
+}
+.formu-ti{
+	margin: 0px 20px;
+	color: #444;
+}
+.datos-contacto{
+	list-style: none;
+	text-align: center;
+}
+.datos-contacto li{
+	color: #444;
+	padding-bottom: 5px;
+}
+.datos-contacto li i{
+	color: #85c34a;
+	font-size: 60px;
+}
+.limpia{
+	clear: both;
+}
+footer{
+	clear: both;
+	margin-top: 50px;
+	background: #000;
+	color: #85c34a;
+	text-align: center;
+	padding: 30px;
+}

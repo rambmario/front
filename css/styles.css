@@ -1,0 +1,348 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background: #ccc;
+}
+
+figure{
+    margin: 0;
+}
+
+img{
+    border:0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 20px 10px;
+}
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+}
+
+
+.articulo{
+    margin: 50px;
+}
+
+/* contenedor de imagenes */
+.contenedorFoto{
+    display: flex;
+    align-content: center;
+    margin: 20px;
+}
+.contenedorFoto img{
+    width: 100%;
+    height: auto;
+}
+
+.contenedorContacto{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.itemContacto{
+    padding: 20px;
+}
+
+/* footer */
+.footer {
+    display:flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    color: #ccc;
+    background-color: #333;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 1.5rem;
+    padding-left: 10px 12px;
+}
+
+.social{
+    padding-left: 20px;
+
+}
+.social a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social a i{
+    color: #ccc;
+    padding: 10px 12px;
+    font-size: 2rem;
+}
+
+
+
+
+/* Menu
+/* Agrego color de fondo */
+.topnav {
+    background-color: #ddd;
+    overflow: hidden;
+  }
+  
+  .topnav .logo{
+      float: left;
+      display: block;
+      width: 200px;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 20px;
+  }
+  /* Estilo de links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2c2c2c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Cambio de color en hover */
+  .topnav a:hover {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  /* Clase activa del menu */
+  .topnav a.active {
+    background-color: #a1397c;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .logo{
+        display: none;
+    }
+  }
+
+  /* tarjetas */
+
+  @media only screen and (min-width: 600px) {
+    .tarjeta{
+        width: 49%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .tarjeta{
+        width: 33%;
+    }
+  }
+
+  @media only screen and (min-width: 1024) {
+    .tarjeta{
+        width: 33%;
+    }
+  }
+
+  .cabecera{
+    background: hsl(0, 0%, 20%);
+    }
+    
+    .centrado{
+        margin: 0 auto;
+        padding: 0 0.8em;
+    }
+    
+    
+    .titulo1{
+        margin: 0 0 1em;
+        padding: 1em 0;
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+    }
+    
+   .tarjeta{
+       display: flex;
+        background: white;
+        margin-bottom: 2em;
+        border: whitesmoke solid 1px;
+    } 
+    
+    .tarjeta a figure img{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    /****2****Agrego esta clase para usar FLEXBOX!!!!*/
+    .cards{
+        display: flex;
+        flex-flow : row wrap;
+        justify-content: space-between;
+    }
+    
+    .tarjeta a{
+        color: #333;
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    .tarjeta a:hover{
+        box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    }
+    
+    .tarjeta-content{  
+        padding: 1rem;
+        
+    }
+    
+    .tarjeta-content h2{
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 600;
+        color: #a1397c;
+        text-transform: uppercase;
+    }
+    
+    .tarjeta-content p{
+        font-size: 80%;
+    }
+    
+/* carrusel */
+.textoCarrusel{
+    color: #ccc;
+    font-size: 5rem;
+    font-family: 'Lora', serif;
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 3fr 50px 3fr;
+    gap: 5px;
+    align-items: stretch;
+    align-content:center;
+    justify-content:flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .grid-item-a {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+  }
+
+  .grid-item-a h2, .grid-item-d h2{
+    font-weight: 600;
+    color: #a1397c;
+  }
+
+  .grid-item-b {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+  }
+
+  .grid-item-c {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .grid-item-d {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+  }
+
+  .grid-item-e {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+  }
+
+  .grid-item-f {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .grid-item-e img, .grid-item-b img{
+      width: 96px;
+      height: 96px;
+  }
