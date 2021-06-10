@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css" href="css/mapayform.css">
-	<title>Formulario de contacto</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/mapayform.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="https://kit.fontawesome.com/ea4ccf6275.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<title>Estudio Jurídico</title>
 </head>
+
 <body>
-	
-	
-	<div class="formulario">
+	<header>
+		<nav class="topnav" id="myTopnav">
+			<img class="logo" id="logo" src="img/logo200x50.png" alt="logo">
+			<a href="index.html">Home</a>
+			<a href="about.html">Nosotros</a>
+			<a href="mision.html">Mision</a>
+			<a href="servicios.html">Servicios</a>
+			<a href="contacto.html" class="active">Contacto</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		<h1>CONTACTO</h1>
+	</header>
+	<main>
+		<div class="formulario">
 			<h4 class="formu-ti">Formulario de Contacto</h4>
 			<form action="enviar.php" method="post">
 				<input type="text" name="nombre" placeholder="Nombre" class="caja-1">
@@ -19,8 +44,24 @@
 				<button type="submit" class="correr">Enviar</button>
 			</form>
 		</div>
+	</main>
+	<footer class="footer">
+		<p>GrupoVag Estudio Jurídico Inmobiliario</p>
+		<ul>
+			<li class="social"><a target="_blank"
+					href="https://api.whatsapp.com/send?phone=5493516821440&amp;text=Hola!%20Quiero%20mas%20información."
+					title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+			<li class="social"><a target="_blank" href="https://www.facebook.com/grupovag.argentina" title="Facebook"><i
+						class="fab fa-facebook"></i></a></li>
+			<li class="social"><a target="_blank" href="https://instagram.com/grupovag.ar" title="Instagram"><i
+						class="fab fa-instagram"></i></a></li>
+		</ul>
+		<p>Copyright @ 2021 GRUPOVAG - grupovag.ar</p>
+	</footer>
+	<script src="js/main.js"></script>
 
-<!-- <a href="mailto:email@address.com?subject=Hello world&body=Line one%0DLine two">Enviar</a> -->
-		
+	<!-- <a href="mailto:email@address.com?subject=Hello world&body=Line one%0DLine two">Enviar</a> -->
+
 </body>
+
 </html>
